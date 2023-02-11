@@ -1,0 +1,96 @@
+/* variables */
+:root {
+  --main-interaction-color: #2196f3;
+  --main-footer-color: #2f303a;
+  --white-text-color: #ffffff;
+  --text-color: #757575;
+}
+
+/* individual elementos */
+body {
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Blaka', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: var(--white-text-color);
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 448px;
+  top: 280px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* pseudo clases */
+a:hover,
+button:hover {
+  background-color: var(--main-interaction-color);
+  color: var(--white-text-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* clases */
+.h1-section > button {
+  background-color: var(--main-interaction-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+  gap: 10px;
+  position: absolute;
+  width: 261px;
+  height: 50px;
+  left: 666px;
+  top: 430px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.service-text {
+  color: var(--white-text-color);
+  width: 197px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: none;
+}
+
+.h1-section {
+  background-color: var(--main-footer-color);
+  width: 1600px;
+  height: 600px;
+  left: -4px;
+  top: 80px;
+}
+
+.footer-section {
+  background-color: var(--main-footer-color);
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2158px;
+}
+
+/* grupal elementos */
