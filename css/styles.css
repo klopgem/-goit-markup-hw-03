@@ -4,6 +4,7 @@
   --main-footer-color: #2f303a;
   --white-text-color: #ffffff;
   --text-color: #757575;
+  --color-black: #000000;
 }
 
 /* individual elementos */
@@ -36,12 +37,32 @@ ul {
   list-style-type: none;
 }
 
+address ul {
+  color: var(--white-text-color);
+  width: 231px;
+  height: 100px;
+  left: 215px;
+  top: 1733px;
+}
+
 /* pseudo clases */
-a:hover,
+[class='header-section'] a:hover,
+[class='footer-section'] a:hover,
+body li:hover,
+body h1:hover,
+body h2:hover,
+body h3:hover,
+body p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-color: var(--main-interaction-color);
+}
+
 button:hover {
   background-color: var(--main-interaction-color);
   color: var(--white-text-color);
   text-decoration: underline;
+  text-decoration-color: var(--main-interaction-color);
   cursor: pointer;
 }
 
@@ -91,6 +112,15 @@ button:hover {
   height: 252px;
   left: 0px;
   top: 2158px;
+}
+
+.header-section a {
+  text-decoration: none;
+}
+
+.footer-section a {
+  color: var(--white-text-color);
+  text-decoration: none;
 }
 
 /* grupal elementos */
