@@ -32,9 +32,14 @@ a {
   cursor: pointer;
 }
 
+[class='header-section'] a:active {
+  color: var(--main-interaction-color);
+}
+
 [type='button']:hover {
   background-color: var(--main-interaction-color);
   color: var(--white-text-color);
+  cursor: pointer;
 }
 
 /* clases */ /* clases */ /* clases */ /* clases */
