@@ -36,7 +36,8 @@ a {
   color: var(--main-interaction-color);
 }
 
-[type='button']:hover {
+.button-images:hover,
+.button-service:hover {
   background-color: var(--main-interaction-color);
   color: var(--white-text-color);
   cursor: pointer;
