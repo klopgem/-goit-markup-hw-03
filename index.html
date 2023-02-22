@@ -18,10 +18,10 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header-section">
+    <header class="header-sectio container-header">
       <nav class="nav-header">
-        <a class="logo" href="#">WebStudio</a>
-        <ul class="ul">
+        <a class="logo header-logo" href="#">WebStudio</a>
+        <ul class="ul container-ul">
           <li>
             <a class="nav-item" href="./index.html">Estudio</a>
           </li>
@@ -54,15 +54,15 @@
       <!-- contenedor servicios -->
       <section class="services-section">
         <h2 class="services" hidden>servicios</h2>
-        <div class="ul flex-services">
-          <div class="flex-service-item">
+        <div class="ul container-services">
+          <div class="container-service-item">
             <h3 class="service">atención a los detalles</h3>
             <p class="service-text">
               Nos adentramos en todos los detalles y procesos de su negocio,
               para así desarrolar una solución a su medida
             </p>
           </div>
-          <div class="flex-service-item">
+          <div class="container-service-item">
             <h3 class="service">puntualidad</h3>
             <p class="service-text">
               Con nosotros, usted puede sentirse seguro y protegido. Un
@@ -70,14 +70,14 @@
               los plazos acordados.
             </p>
           </div>
-          <div class="flex-service-item">
+          <div class="container-service-item">
             <h3 class="service">planificación</h3>
             <p class="service-text">
               Usted podrá observar y participar en cada fase del desarrollo y
               aplicación de soluciones.
             </p>
           </div>
-          <div class="flex-service-item">
+          <div class="container-service-item">
             <h3 class="service">tegnología moderna</h3>
             <p class="service-text">
               Usamos herramientas innovadoras para resolver las tareas
@@ -121,48 +121,56 @@
       </section>
 
       <!-- contenedor Team -->
-      <section class="team">
+      <section class="team container-team">
         <h2 class="our-team">Nuestro Equipo</h2>
-        <ul class="ul">
+        <ul class="ul container-ul-team">
           <li>
-            <img
-              class="member-image"
-              src="./images/team.jpg"
-              width="270"
-              alt="diseñador de productos, Andrés Cubo"
-            />
-            <h3 class="member">Andrés Cubo</h3>
-            <p class="profession">Diseñador de Productos</p>
+            <div class="worker-card">
+              <img
+                class="member-image"
+                src="./images/team.jpg"
+                width="270"
+                alt="diseñador de productos, Andrés Cubo"
+              />
+              <h3 class="member">Andrés Cubo</h3>
+              <p class="profession">Diseñador de Productos</p>
+            </div>
           </li>
           <li>
-            <img
-              class="member-image"
-              src="./images/team(1).jpg"
-              width="270"
-              alt="desarroladora frontend, Carla Palacios"
-            />
-            <h3 class="member">Carla Palacios</h3>
-            <p class="profession">Desarrolladora Frontend</p>
+            <div class="worker-card">
+              <img
+                class="member-image"
+                src="./images/team(1).jpg"
+                width="270"
+                alt="desarroladora frontend, Carla Palacios"
+              />
+              <h3 class="member">Carla Palacios</h3>
+              <p class="profession">Desarrolladora Frontend</p>
+            </div>
           </li>
           <li>
-            <img
-              class="member-image"
-              src="./images/estudio(2).jpg"
-              width="270"
-              alt="marketing, Mario Dorado"
-            />
-            <h3 class="member">Mario Dorado</h3>
-            <p class="profession">Marketing</p>
+            <div class="worker-card">
+              <img
+                class="member-image"
+                src="./images/team(2).jpg"
+                width="270"
+                alt="marketing, Mario Dorado"
+              />
+              <h3 class="member">Mario Dorado</h3>
+              <p class="profession">Marketing</p>
+            </div>
           </li>
           <li>
-            <img
-              class="member-image"
-              src="./images/team(3).jpg"
-              width="270"
-              alt="diseñador IU, Pablo Mijangos"
-            />
-            <h3 class="member">Pablo Mijangos</h3>
-            <p class="profession">Diseñador IU</p>
+            <div class="worker-card">
+              <img
+                class="member-image"
+                src="./images/team(3).jpg"
+                width="270"
+                alt="diseñador IU, Pablo Mijangos"
+              />
+              <h3 class="member">Pablo Mijangos</h3>
+              <p class="profession">Diseñador IU</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -170,23 +178,31 @@
 
     <!-- contenedor Footer -->
     <footer class="footer-section">
-      <a class="logo" href="#" target="_blank" rel="noreferrer noopener"
-        >WebStudio</a
-      >
-      <address class="footer-address">
-        <ul class="ul">
-          <li>
-            <a
-              href="https://goo.gl/maps/6RyMc8973b48PpKp9"
-              target="blank"
-              rel="noreferrer noopener"
-              >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
-            >
-          </li>
-          <li><a href="tel:+525555296000">+52 55 5529 6000</a></li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        </ul>
-      </address>
+      <div class="footer-logo">
+        <a class="logo" href="#" target="_blank" rel="noreferrer noopener"
+          >WebStudio</a
+        >
+      </div>
+      <div class="container-address">
+        <address class="footer-address">
+          <ul class="ul">
+            <li>
+              <a
+                href="https://goo.gl/maps/6RyMc8973b48PpKp9"
+                target="blank"
+                rel="noreferrer noopener"
+                >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+              >
+            </li>
+            <li class="info">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="info">
+              <a href="tel:+525555296000">+52 55 5529 6000</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
