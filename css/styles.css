@@ -13,6 +13,10 @@
 
 /* individual elementos */
 
+/* html {
+  cursor: url(../images/Vector.png);
+} */
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -31,11 +35,14 @@ a {
 /* pseudo clases */ /* pseudo clases */ /* pseudo clases */
 
 [class='header-section'] a:hover,
-[class='footer-section'] a:hover {
+[class='footer-section'] a:hover,
+[class='nav-info'] a:hover {
   cursor: pointer;
 }
 
-[class='header-section'] a:active {
+[class='header-section'] a:active,
+.nav-info > li:active,
+.container-ul a:active {
   color: var(--main-interaction-color);
 }
 
@@ -54,24 +61,33 @@ a {
   list-style-type: none;
 }
 
+.container-general {
+  border: 1px solid var(--border-cards-color);
+}
+
 /* contenedor header */
 
 .container-header {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   justify-content: space-between;
+  width: 1600px;
+  height: 80px;
+  border-bottom: 1px solid var(--border-cards-color);
 }
 
 .nav-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .container-ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 281px;
 }
 
 .logo {
@@ -82,15 +98,44 @@ a {
   color: var(--main-interaction-color);
 }
 
+.header-logo {
+  margin-left: 215px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
+}
+
 .nav-item {
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--nav-item-color);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  letter-spacing: 0.02em;
+}
+
+.nav-info {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--nav-item-color);
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 350px;
+  margin-right: 219px;
+}
+
+.current {
+  color: var(--main-interaction-color);
 }
 
 /* contenedor main */
@@ -159,6 +204,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 112px;
 }
 
 /* contenedor main portfolio imagenes */
