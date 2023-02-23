@@ -24,7 +24,7 @@ body {
   font-weight: 400;
   background-color: var(--white-text-color);
   width: 1600px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 a {
