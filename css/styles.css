@@ -23,7 +23,6 @@ body {
   line-height: 1;
   font-weight: 400;
   background-color: var(--white-text-color);
-  width: 1600px;
   margin: 0 auto;
 }
 
@@ -189,6 +188,11 @@ ul {
   border-radius: 4px;
   /* margin: 0 4px; */
   padding: 6px 24px;
+}
+
+.current-button {
+  color: var(--white-text-color);
+  background-color: var(--main-interaction-color);
 }
 
 .container-buttons {
